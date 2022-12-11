@@ -1,0 +1,31 @@
+{
+    "name": "lambdas",
+    "version": "1.0.0",
+    "description": "Lambda",
+    "main": "index.js",
+    "scripts": {
+      "build": "esbuild index.ts --bundle --platform=node --sourcemap --target=es2020 --outdir=dist-lambda",
+      "clean": "rm -rf node_modules && rm -f package-lock.json",
+      "compile": "tsc",
+      "test": "jest"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+      "@types/aws-lambda": "^8.10.102",
+      "@types/jest": "^28.1.6",
+      "@typescript-eslint/eslint-plugin": "^5.31.0",
+      "@typescript-eslint/parser": "^5.31.0",
+      "esbuild": "^0.14.51",
+      "esbuild-jest": "^0.5.0",
+      "eslint": "^8.20.0",
+      "eslint-config-prettier": "^8.3.0",
+      "eslint-plugin-prettier": "^4.0.0",
+      "http-request-mock": "^1.8.2",
+      "jest": "^28.1.3",
+      "swagger-node-codegen": "^1.6.3",
+      "swagger-typescript-api": "^10.0.2",
+      "ts-jest": "^28.0.7",
+      "typescript": "^4.8.2"
+    }
+  }
